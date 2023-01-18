@@ -26,13 +26,12 @@ function moverpelota () {
         }
         PUNTOS = 1
     } else {
-    	
-    }
-    if (pelota.get(LedSpriteProperty.Y) == 4) {
-        basic.clearScreen()
-        basic.showString("GAME OVER")
-        basic.showString("PUNTOS:")
-        basic.showNumber(0)
+        if (pelota.get(LedSpriteProperty.Y) == 4) {
+            basic.clearScreen()
+            basic.showString("GAME OVER")
+            basic.showString("PUNTOS:")
+            basic.showNumber(0)
+        }
     }
 }
 let azar = false
